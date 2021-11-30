@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peliculas</title>
+        <link type="text/css" rel="stylesheet" href="../css/estilo.css">
+        
+    </head>
+    <body>
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+              <div style="height:100px;"> <img class="imagenPer" src="../img/ImagenMia.PNG"> </div>
+              <br>
+              <h2>Alberto Camacho Alvarez</h2>
+              <p>Estudiante de la carrera de Ingenieria de Software</p>
+            </div>
+            <div class="card">
+              <nav>
+                <ul class="menu">
+                  <a class="botonMenu">Acerca de mi</a>
+                  <hr class="lineaIntermedia">
+                  <a class="botonMenu">Conocimientos</a>
+                  <hr class="lineaIntermedia">
+                  <a class="botonMenu">Mis trabajos</a>
+                  <hr class="lineaIntermedia">
+                  <a class="botonMenu">Peliculas</a>
+                  <hr class="lineaIntermedia"> 
+                  <a class="botonMenu">Contacto</a>
+                </ul>
+              </nav>
+            </div>
+            <div class="card">
+              <h3>Redes Sociales</h3>
+              <div class="sociales">
+                <a>
+                    <img src="../img/facebook.png" width=30px height=30px>
+                </a>            
+                <a>
+                    <img src="../img/twitter.png" width=30px height=30px>
+                </a>            
+                <a>
+                    <img src="../img/instagram.png" width=30px height=30px>
+                </a>            
+                <a>
+                    <img src="../img/wifi.png" width=30px height=30px>
+                </a>  
+                <a>
+                    <img src="../img/dribbble.png" width=30px height=30px>
+                </a>                      
+            </div> 
+            </div>
+          </div>
+    
+          <div class="rightcolumn">
+            <div class="card">
+              <h1 class="titulo">Películas</h1>
+              <hr class="principal">
+              <p class="info-titulo">
+                  Les presento el mi top 5 de peliculas favoritas.
+              </p>
+            </div>
+    
+            <div class="card">
+                <img class="botonAdd" src="../img/agregar.png"/>
+                <img class="botonRemove" src="../img/eliminar.jpg"/>
+            </div>
+    
+            <div class="contenedor">
+                <table class="peliculasTop" id="tabla">
+                    <thead>
+                        <tr class="titulos">
+                            <th><strong>Top</strong></th>
+                            <th><strong>Pelicula</strong></th>
+                            <th><strong>Calificacion</strong></th>
+                            <th><strong>Imagen</strong></th>
+                        </tr>
+                        <tr class="pelicula" onmouseover="imagenCambiar('1')" onmouseout="imagenDesaparece('1')">
+                            <td >1</td>
+                            <td id="titulo">Matrix</td>
+                            <td>10</td>
+                            <td>
+                                <img class="imagenesTab" src=https://static.wikia.nocookie.net/doblaje/images/7/7a/Matrix.jpg/revision/latest?cb=20210703005220&path-prefix=es id="1"/> 
+                            </td>
+                        </tr>
+                        <tr class="pelicula" onmouseover="imagenCambiar('2')" onmouseout="imagenDesaparece('2')">
+                            <td>2</td>
+                            <td>Blade Runner</td>
+                            <td>10</td>
+                            <td>
+                                <img class="imagenesTab" src=https://pics.filmaffinity.com/Blade_Runner_2049-681477614-large.jpg id="2"/> 
+                            </td>
+                        </tr>
+                        <tr class="pelicula" onmouseover="imagenCambiar('3')" onmouseout="imagenDesaparece('3')">
+                            <td>3</td>
+                            <td>Interestelar</td>
+                            <td>9.5</td>
+                            <td>
+                                <img class="imagenesTab" src=https://m.media-amazon.com/images/I/A1JVqNMI7UL._AC_SL1500_.jpg id="3"/> 
+                            </td>
+                        </tr>
+                        <tr class="pelicula" onmouseover="imagenCambiar('4')" onmouseout="imagenDesaparece('4')">
+                            <td>4</td>
+                            <td>Watchmen</td>
+                            <td>9</td>
+                            <td>
+                                <img class="imagenesTab" src=https://static.wikia.nocookie.net/doblaje/images/b/b4/Watchmen_DVD_poster.jpg/revision/latest?cb=20210830075958&path-prefix=es id="4"/> 
+                            </td>
+                        </tr>
+                        <tr class="pelicula" onmouseover="imagenCambiar('5')" onmouseout="imagenDesaparece('5')">
+                            <td>5</td>
+                            <td>Harry Potter</td>
+                            <td>9</td>
+                            <td>
+                                <img class="imagenesTab" src=https://static.cinepolis.com/resources/mx/movies/posters/414x603/37281-619105-20211110041007.jpg id="5"/> 
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <script type="text/javascript" src="../js/funciones1.js"></script>
+        <script type="text/javascript" src="../js/funciones2.js"></script>
+    </body>
+</html>
